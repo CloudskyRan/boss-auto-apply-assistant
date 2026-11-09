@@ -1,0 +1,56 @@
+spring:
+  application:
+    name: mitu
+  profiles:
+    active: dev
+  servlet:
+    multipart:
+      max-file-size: 5MB
+      max-request-size: 6MB
+      resolve-lazily: true
+  info:
+    app:
+      name: 觅途 Mitu
+      version: 3.1.0
+      description: 发现岗位、管理投递与笔试练习的个人工作台
+  banner:
+    charset: UTF-8
+    location: classpath:banner.txt
+  datasource:
+    url: jdbc:sqlite:./db/getjobs.db
+    driver-class-name: org.sqlite.JDBC
+    hikari:
+      maximum-pool-size: 5
+      connection-test-query: SELECT 1
+  sql:
+    init:
+      mode: never  # 数据库文件已存在，不需要自动初始化
+  output:
+    ansi:
+      enabled: always
+
+# 服务器配置
+server:
+  port: 9527  # 后端 API 固定端口（别用 9679：落在 Windows Hyper-V 保留段 9628-9727 里，绑不上）
+
+# 日志配置
+logging:
+  level:
+    root: INFO
+  pattern:
+    console: "%clr(%d{yyyy-MM-dd HH:mm:ss.SSS}){faint} %clr([%thread]){magenta} %clr(%-5level){highlight} %clr(%logger{36}){cyan} %clr(-){faint} %msg%n"
+  file:
+    name: ./target/logs/get-jobs.log
+  logback:
+    rollingpolicy:
+      max-history: 30
+      max-file-size: 10MB
+
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: true
+  global-config:
+    banner: true  # 打开 MyBatis Plus 启动 banner
+    db-config:
+      id-type: auto
+  mapper-locations: classpath*:/mapper/**/*.xml

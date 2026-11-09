@@ -1,0 +1,100 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 230 100% 98%;
+    --foreground: 233 42% 16%;
+    --card: 0 0% 100%;
+    --card-foreground: 233 42% 16%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 233 42% 16%;
+    --primary: 245 89% 63%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 245 100% 96%;
+    --secondary-foreground: 245 75% 43%;
+    --muted: 232 35% 95%;
+    --muted-foreground: 231 17% 45%;
+    --accent: 197 100% 94%;
+    --accent-foreground: 201 90% 32%;
+    --destructive: 0 61% 47%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 232 45% 90%;
+    --input: 232 36% 85%;
+    --ring: 245 89% 63%;
+    --radius: 0.75rem;
+    --color-stroke: #e0e4f1;
+    --color-strokedark: #353a5c;
+    --color-hoverdark: #252b49;
+    --color-titlebg: #eeeaff;
+    --color-titlebg2: #e0f6ff;
+    --color-titlebgdark: #252b49;
+    --color-btndark: #302c59;
+    --color-white: #ffffff;
+    --color-black: #181c3a;
+    --color-blackho: #14182f;
+    --color-blacksection: #111525;
+    --color-meta: #5b4df5;
+    --color-waterloo: #606880;
+    --color-manatee: #a3abc5;
+    --color-alabaster: #f5f7ff;
+    --color-zumthor: #eeebff;
+    --color-socialicon: #c6cbe0;
+  }
+
+  .dark {
+    --background: 233 35% 10%;
+    --foreground: 234 45% 94%;
+    --card: 234 30% 14%;
+    --card-foreground: 234 45% 94%;
+    --popover: 234 30% 14%;
+    --popover-foreground: 234 45% 94%;
+    --primary: 249 100% 77%;
+    --primary-foreground: 244 58% 17%;
+    --secondary: 240 35% 23%;
+    --secondary-foreground: 242 100% 90%;
+    --muted: 234 25% 19%;
+    --muted-foreground: 233 21% 70%;
+    --accent: 201 44% 19%;
+    --accent-foreground: 197 93% 75%;
+    --destructive: 0 60% 59%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 235 26% 27%;
+    --input: 235 24% 33%;
+    --ring: 249 100% 77%;
+  }
+
+  * { @apply border-border; }
+  html { scroll-behavior: smooth; }
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: 'Segoe UI', 'Microsoft YaHei UI', 'Microsoft YaHei', system-ui, sans-serif;
+    font-feature-settings: 'rlig' 1, 'calt' 1;
+  }
+  button, a, input, textarea { -webkit-tap-highlight-color: transparent; }
+  ::selection { background: hsl(var(--secondary)); color: hsl(var(--secondary-foreground)); }
+}
+
+@layer components {
+  .eyebrow { @apply text-[10px] font-semibold uppercase tracking-[0.18em] text-muted-foreground; }
+  .dropdown-panel {
+    @apply fixed z-[99999] max-h-64 overflow-y-auto rounded-xl border bg-popover p-1 text-popover-foreground shadow-[0_12px_35px_-12px_rgba(46,42,106,0.22)];
+  }
+  .workspace-section-number { @apply flex h-7 w-7 shrink-0 items-center justify-center rounded-lg bg-secondary text-xs font-semibold text-secondary-foreground; }
+}
+
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar { display: none; }
+  .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+}
+
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px hsl(var(--card)) inset;
+  -webkit-text-fill-color: hsl(var(--foreground));
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+}

@@ -1,0 +1,4 @@
+${AnsiColor.BRIGHT_GREEN}${AnsiStyle.BOLD}觅途 Mitu${AnsiStyle.NORMAL}${AnsiColor.DEFAULT}
+个人求职工作台 · YOUR NEXT CHAPTER
+Version: ${spring.info.app.version}
+Spring Boot: ${spring-boot.formatted-version}
