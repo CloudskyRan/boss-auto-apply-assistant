@@ -12,7 +12,7 @@
 
 不包含个人数据库、Boss登录资料、简历、密钥或运行日志。首次部署的完整空库初始化尚未补齐，需先准备正确表结构；不要使用或分享他人的登录数据库。浏览器驱动需要单独准备（例如运行 `gradlew installPatchrightDriver`），源码上传不代表已完成全新设备部署验收。
 
-来源、快照范围和当前限制见 [源码发布说明](docs/source-publication.md)。
+版本范围和当前限制见 [源码发布说明](docs/source-publication.md)。
 
 ## 功能
 
@@ -106,8 +106,6 @@ java -jar build/libs/mitu-3.1.0.jar
 
 管理页面端口为 `6866`，后端 API 端口为 `9527`。架构及开发约定见 [docs/architecture.md](docs/architecture.md)。
 
-## 项目来源与许可
+## 使用许可
 
-本项目基于 [loks666/get_jobs](https://github.com/loks666/get_jobs) 修改，形成仅支持 Boss 的派生版本。上游许可与 Required Notice 完整保留于 [LICENSE](LICENSE)，名称和功能调整不改变上游许可。
-
-Required Notice: Copyright (c) 2024-2026 GET JOBS (https://github.com/loks666/get_jobs)
+许可证条款见 [LICENSE](LICENSE)，版权及必要声明见 [NOTICE](NOTICE)。
