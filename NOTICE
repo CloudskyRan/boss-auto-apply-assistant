@@ -1,14 +1,6 @@
-# 来源与许可
-
-Boss自动投简历助手的本地产品品牌为“觅途 Mitu”。本项目基于
-https://github.com/loks666/get_jobs 修改，包含该项目的受许可代码。
+# 版权与许可
 
 Required Notice: Copyright (c) 2024-2026 GET JOBS (https://github.com/loks666/get_jobs)
 
-上游 PolyForm Noncommercial License 1.0.0 原文完整保留于根目录 LICENSE。
-项目改名、界面调整及新增功能不替换上游许可；第三方依赖遵循各自许可证。
-本发布未为整个派生项目另行指定 MIT、Apache 或其他替代许可。
-
-doc/upstream-CLA.md 仅为上游历史文档，不代表本项目新增签署要求。
-为避免携带旧数据库、Cookie、配置和截图，本仓库以当前源码快照创建独立
-初始提交，不复制旧提交历史；此方式不改变代码来源或许可义务。
+License: PolyForm Noncommercial License 1.0.0
+完整许可条款见 LICENSE。
