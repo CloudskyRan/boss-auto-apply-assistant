@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="350" viewBox="0 0 1200 350" fill="none" role="img" aria-labelledby="title desc">
+  <title id="title">觅途 Mitu 求职工作流程</title>
+  <desc id="desc">功能示意：搜索筛选岗位，先留存岗位 JD，再在后台处理投递，并总结需求用于简历准备。不包含真实账号或投递数据。</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="350" gradientUnits="userSpaceOnUse"><stop stop-color="#eef2ff"/><stop offset="1" stop-color="#f0f9ff"/></linearGradient>
+    <linearGradient id="brand" x1="38" y1="38" x2="96" y2="96" gradientUnits="userSpaceOnUse"><stop stop-color="#5b4df5"/><stop offset="1" stop-color="#7c3aed"/></linearGradient>
+  </defs>
+  <rect x="1" y="1" width="1198" height="348" rx="28" fill="url(#bg)" stroke="#dbe3ff" stroke-width="2"/>
+  <circle cx="1130" cy="38" r="132" fill="#dbeafe" fill-opacity=".5"/>
+  <rect x="38" y="34" width="58" height="58" rx="18" fill="url(#brand)"/>
+  <path d="M53 74V54l14 14 14-14v20M53 54l7-6m21 6-7-6" stroke="white" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="67" cy="48" r="3" fill="white"/>
+  <g font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif">
+    <text x="112" y="63" fill="#172554" font-size="28" font-weight="700">觅途 Mitu</text>
+    <text x="112" y="87" fill="#586783" font-size="16">个人求职工作台 · Boss直聘自动投简历助手</text>
+    <text x="38" y="137" fill="#172554" font-size="23" font-weight="600">从找到岗位，到积累下一次准备的依据。</text>
+    <rect x="38" y="173" width="250" height="119" rx="18" fill="white" stroke="#dbe3ff"/>
+    <rect x="329" y="173" width="250" height="119" rx="18" fill="white" stroke="#dbe3ff"/>
+    <rect x="620" y="173" width="250" height="119" rx="18" fill="white" stroke="#dbe3ff"/>
+    <rect x="911" y="173" width="250" height="119" rx="18" fill="#5b4df5"/>
+    <text x="59" y="205" fill="#5b4df5" font-size="14" font-weight="700">01 / SEARCH</text>
+    <text x="350" y="205" fill="#5b4df5" font-size="14" font-weight="700">02 / COLLECT</text>
+    <text x="641" y="205" fill="#5b4df5" font-size="14" font-weight="700">03 / APPLY</text>
+    <text x="932" y="205" fill="#e0e7ff" font-size="14" font-weight="700">04 / PREPARE</text>
+    <text x="59" y="242" fill="#172554" font-size="26" font-weight="700">搜索与筛选</text>
+    <text x="350" y="242" fill="#172554" font-size="26" font-weight="700">留存完整 JD</text>
+    <text x="641" y="242" fill="#172554" font-size="26" font-weight="700">后台投递</text>
+    <text x="932" y="242" fill="white" font-size="26" font-weight="700">归纳岗位需求</text>
+    <text x="59" y="271" fill="#586783" font-size="16">城市、类型、关键词、偏好</text>
+    <text x="350" y="271" fill="#586783" font-size="16">原文、版本、命中来源</text>
+    <text x="641" y="271" fill="#586783" font-size="16">固定招呼、数量控制、静默</text>
+    <text x="932" y="271" fill="#e0e7ff" font-size="16">技能统计、AI总结、证据</text>
+    <text x="38" y="325" fill="#66758f" font-size="14">功能流程示意 · 不包含真实账号、岗位或投递数据</text>
+  </g>
+  <path d="M300 232h17m-5-5 5 5-5 5M591 232h17m-5-5 5 5-5 5M882 232h17m-5-5 5 5-5 5" stroke="#94a3c8" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
